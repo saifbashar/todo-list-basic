@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo list</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Font awesome kits -->
+    <script
+      src="https://kit.fontawesome.com/b1673043ec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand">Navbar</a>
+          <div class="d-flex">
+            <input
+              class="me-2"
+              type="text"
+              id="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main section started -->
+    <main>
+      <section class="mt-5">
+        <div class="container px-4">
+          <div class="row gx-5">
+            <div class="col-8">
+              <!-- input field -->
+              <div class="p-3 border bg-light">
+                <div class="d-flex">
+                  <input
+                    class="me-2 w-100"
+                    type="text"
+                    placeholder="Add a task"
+                    id="task-input"
+                  />
+                  <button
+                    class="btn btn-outline-success"
+                    id="add-task-button"
+                    type="submit"
+                  >
+                    Add
+                  </button>
+                </div>
+              </div>
+              <!-- end of the input field -->
+              <!-- task list -->
+              <div class="m-5" id="task-list"></div>
+            </div>
+            <div class="col-4">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td><b>Total-task</b></td>
+                    <td id="total-task">0</td>
+                  </tr>
+                  <tr>
+                    <td><b>done</b></td>
+                    <td id="done">0</td>
+                  </tr>
+                  <tr>
+                    <td><b>Undone</b></td>
+                    <td id="undone">0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Optional JavaScript -->
+    <script src="./JS/app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
